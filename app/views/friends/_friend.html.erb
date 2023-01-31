@@ -1,0 +1,12 @@
+<div id="<%= dom_id friend %>">
+  <table class="table table-stripped tabled-bordered table-hover">
+  <div class="row">
+  <div class="col"><%= friend.first_name %></div>
+  <div class="col"><%= friend.last_name %></div>
+  <div class="col"><%= friend.email %></div>
+  <div class="col"><%= friend.phone %></div>
+  <div class="col"><%= friend.twitter %></div>
+  <div class="col"><%= link_to "Show this friend", friend, class:"btn btn-info btn-sm" %></div>
+  <div class="col"><%= button_to "Delete", @friend, method: :delete %></div>
+  </table>
+</div>
