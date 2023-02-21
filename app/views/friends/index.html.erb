@@ -13,11 +13,13 @@
     <th>Phone</th>
     <th>Twitter</th>
     <th>Show Friend</th>
+    <th>Delete</th>
 
   <% @friends.each do |friend| %>
-    <%= render friend %>
+  <%= render friend %>
 
-  <% end %><br><br>
+  <% end %>
+  <br><br>
   Want to add someone to your list?<br>
   <%= link_to "Add a New friend", new_friend_path, class:"btn btn-secondary" %>
 </div>
