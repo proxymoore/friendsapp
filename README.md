@@ -1,24 +1,14 @@
 # README
+git clone this repo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use rvm (or the ruby manager of your choice) to install and set your Ruby to the version of Ruby listed in the Gemfile
 
-Things you may want to cover:
+If you have to install a new version of Bundler you’ll need to run gem install bundler
 
-* Ruby version
+bundle install to install depenencies
 
-* System dependencies
+bundle exec rails db:create to create an empty database
 
-* Configuration
+bundle exec rails db:migrate to run the migrations
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails console to enter Friends App console
